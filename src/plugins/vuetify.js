@@ -1,16 +1,14 @@
 import Vue from "vue";
 import Vuetify from "vuetify/lib/framework";
-import th from "vuetify/es5/locale/th";
-import en from "vuetify/es5/locale/en";
-import { loadFonts } from "./webfontloader";
+import locales from "@/locales/locales";
+import config from "@/config/app.config";
 
-loadFonts();
 Vue.use(Vuetify);
 
 const opts = {
   lang: {
-    locales: { th, en },
-    current: "en",
+    locales: locales,
+    current: config?.settings?.locale || "en",
   },
   theme: {
     options: {

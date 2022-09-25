@@ -25,16 +25,20 @@ export default defineConfig({
   },
   css: {
     preprocessorOptions: {
-      scss: {
+      sass: {
         additionalData: [
-          '@import "./src/assets/scss/variables.scss";',
-          '@import "vuetify/src/styles/settings/_variables.scss";',
+          '@import "@/assets/scss/vuetify/variables"',
+          '@import "vuetify/src/styles/settings/_variables"',
           "", // end with newline
         ].join("\n"),
+      },
+      scss: {
+        additionalData: `@import "@/assets/scss/main.scss";`,
       },
     },
   },
   server: {
     port: 3001,
   },
+  envPrefix: "APP_",
 });

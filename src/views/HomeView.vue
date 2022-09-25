@@ -1,10 +1,8 @@
-<script setup>
-import TheWelcome from "@/components/TheWelcome.vue";
-</script>
+<script setup></script>
 
 <template>
   <main>
-    <TheWelcome />
+    {{ $vuetify.lang.t("$vuetify.title") }}
   </main>
 </template>
 <style lang="scss">
