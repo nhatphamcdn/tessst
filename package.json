@@ -19,6 +19,8 @@
     "lint:style": "stylelint \"./**/*.{css,scss,vue}\" --fix  && prettier  \"./**/*.{css,scss,vue}\" -w"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "qs": "^6.11.0",
     "vue": "^2.7.7",
     "vue-router": "^3.5.4",
     "vuetify": "^2.6.10",
@@ -55,7 +57,7 @@
   },
   "lint-staged": {
     "*.{js,vue}": [
-      "eslint --fix ."
+      "eslint --fix . --ignore-path .gitignore"
     ],
     "*.{css,scss,vue}": [
       "stylelint --fix"

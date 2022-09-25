@@ -1,3 +1,15 @@
+// import {isProduction} from "@/utils/environment.util";
+
+export const APP_API_URL = import.meta.env.APP_API_URL;
+
+export const SYSTEM_CONFIG = {
+  breadcrumb: true,
+  menuTitle: "Portal partner",
+  toolbarTitle: false,
+
+  permitUrls: ["/login"],
+};
+
 export default {
   /**
    * @type {String} '0.0.1'
