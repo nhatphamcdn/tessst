@@ -1,11 +1,15 @@
 .app-bar {
   height: auto !important;
   z-index: 999 !important;
-}
 
-.app-bar /deep/ .v-toolbar__extension {
-  padding: 0 !important;
-  height: 36px !important;
+  :deep(.v-toolbar__extension) {
+    padding: 0 !important;
+    height: 36px !important;
+  }
+
+  :deep(.v-breadcrumbs__item--disabled) {
+    color: rgba(0, 0, 0, 0.87) !important;
+  }
 }
 
 .main-content {
@@ -16,10 +20,6 @@
 .system-title {
   color: #000;
   font-weight: bold;
-}
-
-.app-bar /deep/ .v-breadcrumbs__item--disabled {
-  color: rgba(0, 0, 0, 0.87) !important;
 }
 
 .slide-right-enter-active,

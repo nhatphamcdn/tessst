@@ -10,6 +10,18 @@
   "rules": {
     "color-function-notation": "legacy",
     "function-no-unknown": null,
-    "scss/no-global-function-names": null
+    "scss/no-global-function-names": null,
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["deep"]
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["deep"]
+      }
+    ]
   }
 }
